@@ -21,8 +21,6 @@ Below is a complete overview of all included levels and exercises.
 
 ## 📊 Exam Levels Overview
 
-## 📊 Exam Levels Overview
-
 | **Level 1** | **Level 2** | **Level 3** | **Level 4** |
 |------------|-------------|-------------|-------------|
 | first_word | ft_atoi | epur_str | fprime |
