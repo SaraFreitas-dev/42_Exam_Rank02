@@ -21,12 +21,30 @@ Below is a complete overview of all included levels and exercises.
 
 ## 📊 Exam Levels Overview
 
-| **Level** | **Exercises Included** |
-|----------|-------------------------|
-| **Level 1** | first_word, fizzbuzz, ft_strlen, ft_strcpy, ft_putstr, ft_swap, repeat_alpha, rev_print, rotone, rot_13, search_and_replace, ulstr |
-| **Level 2** | ft_atoi, ft_strdup, ft_strcmp, ft_strcspn, ft_strspn, ft_strpbrk, ft_strrev, max, is_power_of_2, print_bits, reverse_bits, swap_bits, alpha_mirror, snake_to_camel, camel_to_snake, wdmatch, union, do_op, last_word |
-| **Level 3** | epur_str, expand_str, rstr_capitalizer, str_capitalizer, hidenp, add_prime_sum, pgcd, lcm, paramsum, tab_mult, ft_range, ft_rrange, ft_list_size, ft_atoi_base, print_hex |
-| **Level 4** | fprime, sort_int_tab, rev_wstr, rostring, ft_split, flood_fill, sort_list, ft_list_foreach, ft_list_remove_if |
+## 📊 Exam Levels Overview
+
+| **Level 1** | **Level 2** | **Level 3** | **Level 4** |
+|------------|-------------|-------------|-------------|
+| first_word | ft_atoi | epur_str | fprime |
+| fizzbuzz | ft_strdup | expand_str | sort_int_tab |
+| ft_strlen | ft_strcmp | rstr_capitalizer | rev_wstr |
+| ft_strcpy | ft_strcspn | str_capitalizer | rostring |
+| ft_putstr | ft_strspn | hidenp | ft_split |
+| ft_swap | ft_strpbrk | add_prime_sum | flood_fill |
+| repeat_alpha | ft_strrev | pgcd | sort_list |
+| rev_print | max | lcm | ft_list_foreach |
+| rotone | is_power_of_2 | paramsum | ft_list_remove_if |
+| rot_13 | print_bits | tab_mult | |
+| search_and_replace | reverse_bits | ft_range | |
+| ulstr | swap_bits | ft_rrange | |
+|  | alpha_mirror | ft_list_size | |
+|  | snake_to_camel | ft_atoi_base | |
+|  | camel_to_snake | print_hex | |
+|  | wdmatch |  | |
+|  | union |  | |
+|  | do_op |  | |
+|  | last_word |  | |
+
 
 ---
 
