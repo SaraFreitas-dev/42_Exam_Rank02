@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void	ft_putstr(char *str)
 {
 	int	i;
@@ -27,6 +25,8 @@ void	ft_putstr(char *str)
 }
 
 /*
+#include <unistd.h>
+
 int	main(void)
 {
 	char *str = "Hello";
