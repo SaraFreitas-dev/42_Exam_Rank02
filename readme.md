@@ -76,7 +76,7 @@ To compile:
 gcc -Wall -Wextra -Werror exercise.c && ./a.out
 ``` 
 
-Example:
+Example to compile and test:
 
 ```bash
 gcc -Wall -Wextra -Werror first_word.c
