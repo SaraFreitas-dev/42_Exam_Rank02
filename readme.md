@@ -80,5 +80,7 @@ Example:
 
 ```bash
 gcc -Wall -Wextra -Werror first_word.c
+``` 
+```bash
 ./a.out "a" "b" | cat -e
 ``` 
