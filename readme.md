@@ -70,7 +70,15 @@ To compile the exercises:
 - GCC or Clang  
 - Standard C libraries  
 
-Example compilation:
+To compile:
 
 ```bash
 gcc -Wall -Wextra -Werror exercise.c && ./a.out
+``` 
+
+Example:
+
+```bash
+gcc -Wall -Wextra -Werror first_word.c
+./a.out "a" "b" | cat -e
+``` 
