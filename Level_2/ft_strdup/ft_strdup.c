@@ -54,7 +54,7 @@ int	main(void)
 	char	*str3 = ft_strdup(str1);
 
 	printf("ORIGINAL: %s\n", str2);
-	printf("MY FUNCTIONN: %s", str3);
+	printf("MY FUNCTION: %s", str3);
 
 	return (0);
 }
