@@ -6,7 +6,7 @@
 /*   By: sarfreit <sarfreit@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 17:44:06 by sarfreit          #+#    #+#             */
-/*   Updated: 2026/01/20 18:20:00 by sarfreit         ###   ########.fr       */
+/*   Updated: 2026/01/20 19:14:39 by sarfreit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ int main(void)
         printf("%d\n", nums[i]);
         i++;
     }
+    free(nums);
     return (0);
 }*/
