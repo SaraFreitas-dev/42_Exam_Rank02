@@ -26,3 +26,21 @@ int ft_list_size(t_list *begin_list)
     }
     return (counter);
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    t_list a;
+    t_list b;
+    t_list c;
+
+    a.next = &b;
+    b.next = &c;
+    c.next = NULL;
+
+    printf("%d\n", ft_list_size(&a));
+    return (0);
+}
+*/
