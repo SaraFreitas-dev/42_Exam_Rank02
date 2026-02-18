@@ -81,7 +81,6 @@ int	main(int argc, char *argv[])
 		write(1, "0\n", 2);
 		return (0);
 	}
-	else
 	result = 0;
 	nbr = ft_atoi(argv[1]);
 	if (nbr < 0)
