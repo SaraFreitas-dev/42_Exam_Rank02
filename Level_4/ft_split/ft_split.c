@@ -14,37 +14,30 @@
 
 int is_space(char c)
 {
-    if (((c >= 9) && (c <= 13)) || (c == 32))
-        return (1);
-    return (0);
+    return ((c >= 9 && c <= 13) || c == 32);
 }
-
 int count_words(char *str)
 {
-    int i;
-    int words;
-    
-    i = 0;
-    words = 0;
+    int i = 0;
+    int words = 0;
+
     while (str[i])
     {
-        while ((str[i]) && is_space(str[i]))
+        while (str[i] && is_space(str[i]))
             i++;
-        if ((str[i]) && !is_space(str[i]))
+        if (str[i])
         {
             words++;
-            while ((str[i]) && !is_space(str[i]))
+            while (str[i] && !is_space(str[i]))
                 i++;
         }
     }
     return (words);
 }
 
-int  word_len(char *str, int i)
+int word_len(char *str, int i)
 {
-    int len;
-
-    len = 0;
+    int len = 0;
     while (str[i] && !is_space(str[i]))
     {
         len++;
@@ -55,38 +48,52 @@ int  word_len(char *str, int i)
 
 char    **ft_split(char *str)
 {
-    int     i;
-    char    **arr;
-    int     w_len;
-    int     start;
-    int     k;
+    int i;
+    int j;
+    int k;
+    int len;
+    char **res;
 
-    arr = (char **)malloc(sizeof(char *) * (count_words(str) + 1));
-    if (!arr)
+    res = malloc(sizeof(char *) * (count_words(str) + 1));
+    if (!res)
         return (NULL);
     i = 0;
-    k = 0;
+    j = 0;
     while (str[i])
     {
         while (str[i] && is_space(str[i]))
             i++;
-        if (str[i] && !is_space(str[i]))
+        if (str[i])
         {
-            w_len = word_len(str, i);
-            arr[k] = (char *)malloc(sizeof(char) * (w_len + 1));
-            if (!arr[k])
+            len = word_len(str, i);
+            res[j] = malloc(sizeof(char) * (len + 1));
+            if (!res[j])
                 return (NULL);
-            start = 0;
-            while (start < w_len)
-            {
-                arr[k][start] = str[start + i];
-                start++;
-            }
-            arr[k][start] = '\0';
-            i += w_len;
-            k++;
+            k = 0;
+            while (k < len)
+                res[j][k++] = str[i++];
+            res[j][k] = '\0';
+            j++; 
         }
     }
-    arr[k] = NULL;
-    return (arr);
+    res[j] = NULL;
+    return (res);
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *str = "Hello all of you!";
+    printf("%s", str);
+    int i = 0;
+    char **res = ft_split(str);
+    while (res[i])
+    {
+        printf("%s\n", res[i]);
+        i++;
+    }
+    return (0);
+}
+*/
