@@ -10,38 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include  <stdio.h>
 #include <stdlib.h>
 
-int	pgcd(char *str1, char *str2)
+int main(int argc, char **argv)
 {
-	int	num1;
-	int	num2;
-	int	current_div;
-	int	max_div;
-
-	num1 = atoi(str1);
-	num2 = atoi(str2);
-	current_div = 1;
-	max_div = 0;
-	while ((current_div <= num1) && (current_div <= num2))
-	{
-		if ((num1 % current_div == 0) && (num2 % current_div == 0))
-			max_div = current_div;
-		current_div++;
-	}
-	return (max_div);
-}
-
-int	main(int argc, char *argv[])
-{
-	int	num;
-	if (argc != 3)
-	{
-		printf("\n");
-		return (0);
-	}
-	num = pgcd(argv[1], argv[2]);
-	printf("%d\n", num);
-	return (0);
+    if (argc != 3)
+    {
+        printf("\n");
+        return (0);
+    }
+    int n1 = atoi(argv[1]);
+    int n2 = atoi(argv[2]);
+    int i;
+    if (n1 > n2)
+        i = n2;
+    else
+        i = n1;
+    while (i > 0)
+    {
+        if ((n1 % i == 0) && (n2 % i == 0))
+        {
+            printf("%d\n", i);
+            return (0);
+        }
+        i--;
+    }
+    return (0);
 }
