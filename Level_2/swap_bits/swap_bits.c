@@ -12,24 +12,7 @@
 
 unsigned char	swap_bits(unsigned char octet)
 {
-	int				i;
-	unsigned char	bit;
-
-	i = 0;
-	bit = 0;
-	while (i < 4)
-	{
-		if (octet & (1 << i))
-			bit = bit | (1 << (4 + i));
-		i++;
-	}
-	while (i <= 7)
-	{
-		if (octet & (1 << i))
-			bit = bit | (1 << (i - 4));
-		i++;
-	}
-	return (bit);
+	return ((octet << 4) | (octet >> 4));
 }
 
 /*
