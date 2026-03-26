@@ -11,22 +11,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		max(int* tab, unsigned int len)
+int max(int* tab, unsigned int len)
 {
     unsigned int i;
-    int result;
+    int largest_n;
+    i = 1;
     
-    i = 0;
     if (len == 0)
         return (0);
-    result = tab[i];
-    while (i < len)
+    largest_n = tab[0];
+    while ((i < len))
     {
-        if (tab[i] > result)
-            result = tab[i];
-        i++;      
+        if (tab[i] > largest_n)
+            largest_n = tab[i];
+        i++;
     }
-    return (result);
+    return (largest_n);
 }
 
 /*
@@ -39,17 +39,3 @@ int main(void)
     return (0);
 }
 */
-=======
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   max.c                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sarfreit <sarfreit@student.42porto.com>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 22:38:57 by sarfreit          #+#    #+#             */
-/*   Updated: 2026/01/15 22:38:57 by sarfreit         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
->>>>>>> da77a03 (added max and prime)

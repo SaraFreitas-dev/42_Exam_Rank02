@@ -10,35 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int    ft_hcf(unsigned int a, unsigned int b)
-{
-    unsigned int    min_div;
-    unsigned int    value;
-
-    min_div = 0;
-    if (a < b)
-        value = a;
-    else
-        value = b;
-    while (value > 0)
-    {
-        if ((a % value == 0) && (b % value == 0))
-            min_div = value;
-        value--;
-    }
-    return (min_div);
-}
-  
 unsigned int    lcm(unsigned int a, unsigned int b)
 {
-    unsigned int    hcf;
-    unsigned int    result;
-
-    hcf = ft_hcf(a, b);
-    if (!a || !b || (a == 0) || (b == 0))
+    unsigned int i;
+    if (a > b)
+        i = a;
+    else
+        i = b;
+    if ((a == 0) || (b == 0))
         return (0);
-    result = (a * b) / hcf;
-    return (result);
+    while (1)
+    {
+        if ((i % a == 0) && (i % b == 0))
+            return (i);
+        i++;
+    }
 }
 /*
 #include <stdio.h>
