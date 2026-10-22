@@ -1,0 +1,20 @@
+Assignment name  : ft_lstlast
+Expected files   : ft_lstlast.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that returns the last node of a linked list.
+
+If the list is empty (NULL), the function returns NULL.
+
+Declare this structure in your file:
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+Your function must be declared as follows:
+
+t_list	*ft_lstlast(t_list *lst);

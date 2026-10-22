@@ -1,0 +1,22 @@
+Assignment name  : prime_args
+Expected files   : prime_args.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays, in order, the arguments that are prime
+numbers, separated by exactly one space, followed by a newline.
+
+An argument is only considered if it is made only of digits ('0' to '9').
+Every other argument is ignored.
+
+If there are no arguments, or no prime numbers, the program displays
+only a newline.
+
+Examples:
+
+$> ./prime_args 1 2 3 4 5 | cat -e
+2 3 5$
+$> ./prime_args 10 abc 13 -7 | cat -e
+13$
+$> ./prime_args 4 6 8 | cat -e
+$

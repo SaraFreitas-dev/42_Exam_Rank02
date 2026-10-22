@@ -1,0 +1,8 @@
+ft_split("Hello 42 Porto", ' ') = ["Hello", "42", "Porto"] (3 words)
+ft_split("   lots   of   spaces   ", ' ') = ["lots", "of", "spaces"] (3 words)
+ft_split("", ' ') = [] (0 words)
+ft_split("     ", ' ') = [] (0 words)
+ft_split("noseparator", ' ') = ["noseparator"] (1 words)
+ft_split("a,b,,c,", ',') = ["a", "b", "c"] (3 words)
+ft_split(",,,start", ',') = ["start"] (1 words)
+ft_split("one", 'o') = ["ne"] (1 words)

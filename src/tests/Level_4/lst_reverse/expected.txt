@@ -1,0 +1,16 @@
+before: ["one" -> "two" -> "three" -> "four" -> "five"]
+after:  ["five" -> "four" -> "three" -> "two" -> "one"]
+same nodes reused: yes
+
+before: ["42" -> "Porto"]
+after:  ["Porto" -> "42"]
+same nodes reused: yes
+
+before: ["alone"]
+after:  ["alone"]
+same nodes reused: yes
+
+before: []
+after:  []
+same nodes reused: yes
+

@@ -1,0 +1,14 @@
+list of 3 node(s):
+  del("one")
+  del("two")
+  del("three")
+  del called 3 time(s) | *lst is NULL
+
+list of 1 node(s):
+  del("alone")
+  del called 1 time(s) | *lst is NULL
+
+list of 0 node(s):
+  del called 0 time(s) | *lst is NULL
+
+ft_lstclear(NULL, del): no crash

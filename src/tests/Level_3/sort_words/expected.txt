@@ -1,0 +1,39 @@
+$ ./sort_words banana apple cherry
+apple
+banana
+cherry
+
+$ ./sort_words b B a A
+A
+B
+a
+b
+
+$ ./sort_words
+
+
+$ ./sort_words one
+one
+
+$ ./sort_words same same
+same
+same
+
+$ ./sort_words abc ab abcd a
+a
+ab
+abc
+abcd
+
+$ ./sort_words 42 Porto 42porto _x
+42
+42porto
+Porto
+_x
+
+$ ./sort_words zebra Zebra zebra2 apple
+Zebra
+apple
+zebra
+zebra2
+

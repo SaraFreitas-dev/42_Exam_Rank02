@@ -1,0 +1,4 @@
+list of 0 node(s) -> NULL
+list of 1 node(s) -> "five"
+list of 2 node(s) -> "five"
+list of 5 node(s) -> "five"

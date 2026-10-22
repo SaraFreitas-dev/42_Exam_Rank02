@@ -1,0 +1,19 @@
+Assignment name  : ft_substr
+Expected files   : ft_substr.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Write a function that allocates (with malloc) and returns a substring of
+the string s. The substring begins at index start and has a maximum
+length of len.
+
+If start is greater than or equal to the length of s, the function
+returns an empty string (allocated).
+If s does not have len characters after start, the substring stops at
+the end of s.
+
+If the allocation fails, the function returns NULL.
+
+Your function must be declared as follows:
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);

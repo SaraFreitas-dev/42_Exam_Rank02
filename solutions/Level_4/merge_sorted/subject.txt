@@ -1,0 +1,17 @@
+Assignment name  : merge_sorted
+Expected files   : merge_sorted.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Write a function that takes two arrays of integers, each one already
+sorted in ascending order, and returns a new array (allocated with malloc)
+with all the values of both, also sorted in ascending order.
+
+The original arrays must not be modified.
+
+If size_a + size_b is 0, or if the allocation fails, the function
+returns NULL.
+
+Your function must be declared as follows:
+
+int	*merge_sorted(int *a, int size_a, int *b, int size_b);

@@ -1,0 +1,13 @@
+Assignment name  : ft_sqrt
+Expected files   : ft_sqrt.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that returns the square root of a number if it exists,
+or 0 if the square root is not a whole number.
+
+Negative numbers and 0 return 0.
+
+Your function must be declared as follows:
+
+int	ft_sqrt(int nb);

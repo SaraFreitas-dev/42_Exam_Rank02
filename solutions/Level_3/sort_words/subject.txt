@@ -1,0 +1,23 @@
+Assignment name  : sort_words
+Expected files   : sort_words.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays its arguments sorted in ASCII order
+(the same order as strcmp), one per line.
+
+If there are no arguments, the program displays only a newline.
+
+Examples:
+
+$> ./sort_words banana apple cherry | cat -e
+apple$
+banana$
+cherry$
+$> ./sort_words b B a A | cat -e
+A$
+B$
+a$
+b$
+$> ./sort_words | cat -e
+$

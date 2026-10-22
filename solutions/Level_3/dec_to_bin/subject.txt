@@ -1,0 +1,20 @@
+Assignment name  : dec_to_bin
+Expected files   : dec_to_bin.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a positive integer as argument and displays it
+in binary (base 2), without leading zeros, followed by a newline.
+
+The argument is always made only of digits and fits in an unsigned int.
+
+If the number of arguments is not 1, the program displays only a newline.
+
+Examples:
+
+$> ./dec_to_bin 10 | cat -e
+1010$
+$> ./dec_to_bin 0 | cat -e
+0$
+$> ./dec_to_bin | cat -e
+$

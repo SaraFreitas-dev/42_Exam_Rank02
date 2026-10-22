@@ -1,0 +1,8 @@
+banana|apple|cherry
+b|B|a|A
+
+one
+same|same
+abc|ab|abcd|a
+42|Porto|42porto|_x
+zebra|Zebra|zebra2|apple

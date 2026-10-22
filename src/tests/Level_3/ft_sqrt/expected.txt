@@ -1,0 +1,14 @@
+ft_sqrt(0) = 0
+ft_sqrt(1) = 1
+ft_sqrt(2) = 0
+ft_sqrt(4) = 2
+ft_sqrt(9) = 3
+ft_sqrt(10) = 0
+ft_sqrt(16) = 4
+ft_sqrt(25) = 5
+ft_sqrt(26) = 0
+ft_sqrt(144) = 12
+ft_sqrt(-4) = 0
+ft_sqrt(-2147483648) = 0
+ft_sqrt(2147395600) = 46340
+ft_sqrt(2147483647) = 0

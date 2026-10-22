@@ -1,0 +1,8 @@
+vowel_count("hello") = 2
+vowel_count("") = 0
+vowel_count("AEIOU aeiou") = 10
+vowel_count("rhythm") = 0
+vowel_count("Porto") = 2
+vowel_count("yYyY") = 0
+vowel_count("The quick brown fox jumps over the lazy dog") = 11
+vowel_count("12345 !?") = 0

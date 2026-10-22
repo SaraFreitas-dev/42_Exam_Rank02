@@ -1,0 +1,8 @@
+ft_substr("Hello, 42 Porto!", 7, 2) = "42"
+ft_substr("Hello, 42 Porto!", 0, 5) = "Hello"
+ft_substr("Hello, 42 Porto!", 10, 100) = "Porto!"
+ft_substr("Hello", 0, 0) = ""
+ft_substr("Hello", 5, 3) = ""
+ft_substr("Hello", 42, 3) = ""
+ft_substr("", 0, 5) = ""
+ft_substr("abc", 2, 1) = "c"

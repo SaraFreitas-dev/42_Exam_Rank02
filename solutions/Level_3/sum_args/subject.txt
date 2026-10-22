@@ -1,0 +1,21 @@
+Assignment name  : sum_args
+Expected files   : sum_args.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes integers as arguments and displays their sum,
+followed by a newline.
+
+Each argument is a valid integer (it may start with '-' or '+').
+The sum always fits in an int.
+
+If there are no arguments, the program displays 0 followed by a newline.
+
+Examples:
+
+$> ./sum_args 1 2 3 | cat -e
+6$
+$> ./sum_args 10 -25 | cat -e
+-15$
+$> ./sum_args | cat -e
+0$

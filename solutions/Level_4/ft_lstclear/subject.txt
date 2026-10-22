@@ -1,0 +1,24 @@
+Assignment name  : ft_lstclear
+Expected files   : ft_lstclear.c
+Allowed functions: free
+--------------------------------------------------------------------------------
+
+Write a function that deletes and frees every node of the list *lst,
+using the function del on the content of each node, and free on the
+node itself.
+
+At the end, the pointer *lst must be set to NULL.
+
+If lst or *lst is NULL, nothing happens.
+
+Declare this structure in your file:
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+Your function must be declared as follows:
+
+void	ft_lstclear(t_list **lst, void (*del)(void *));

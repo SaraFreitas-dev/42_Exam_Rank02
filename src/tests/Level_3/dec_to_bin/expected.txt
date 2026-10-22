@@ -1,0 +1,33 @@
+$ ./dec_to_bin 10
+1010
+
+$ ./dec_to_bin 0
+0
+
+$ ./dec_to_bin 1
+1
+
+$ ./dec_to_bin 2
+10
+
+$ ./dec_to_bin 255
+11111111
+
+$ ./dec_to_bin 256
+100000000
+
+$ ./dec_to_bin 1024
+10000000000
+
+$ ./dec_to_bin 42
+101010
+
+$ ./dec_to_bin 4294967295
+11111111111111111111111111111111
+
+$ ./dec_to_bin
+
+
+$ ./dec_to_bin 1 2
+
+

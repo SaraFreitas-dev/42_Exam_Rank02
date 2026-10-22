@@ -1,0 +1,30 @@
+$ ./prime_args 1 2 3 4 5
+2 3 5
+
+$ ./prime_args 10 abc 13 -7
+13
+
+$ ./prime_args 4 6 8
+
+
+$ ./prime_args
+
+
+$ ./prime_args 0 1
+
+
+$ ./prime_args 97
+97
+
+$ ./prime_args 2 2 2
+2 2 2
+
+$ ./prime_args 12a 17 +19 23
+17 23
+
+$ ./prime_args 7919 7920
+7919
+
+$ ./prime_args 1000003
+1000003
+

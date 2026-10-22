@@ -1,0 +1,20 @@
+Assignment name  : ft_putnbr_base
+Expected files   : ft_putnbr_base.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that displays the number nbr in the base given by the
+string base. The length of base is the radix, and each character is a
+digit ("01" is binary, "0123456789ABCDEF" is hexadecimal, "poneyvif" is
+base 8...).
+
+Negative numbers are displayed with a '-' in front (INT_MIN included).
+
+If the base is invalid, the function displays nothing. A base is invalid if:
+- it is empty or has only one character;
+- it contains the same character twice;
+- it contains '+' or '-'.
+
+Your function must be declared as follows:
+
+void	ft_putnbr_base(int nbr, char *base);

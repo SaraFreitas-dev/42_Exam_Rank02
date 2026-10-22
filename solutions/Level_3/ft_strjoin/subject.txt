@@ -1,0 +1,13 @@
+Assignment name  : ft_strjoin
+Expected files   : ft_strjoin.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Write a function that allocates (with malloc) and returns a new string,
+which is the result of the concatenation of s1 and s2.
+
+If the allocation fails, the function returns NULL.
+
+Your function must be declared as follows:
+
+char	*ft_strjoin(char const *s1, char const *s2);

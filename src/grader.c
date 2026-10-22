@@ -67,13 +67,34 @@ static void	append_text(const char *path, const char *text)
 	fclose(f);
 }
 
+/*
+** Writes "$ ./<name> arg1 arg2 ..." like in a shell.
+** Arguments with spaces are shown between quotes.
+*/
+static void	append_header(const t_exercise *ex, char **argv, const char *outfile)
+{
+	int	i;
+
+	append_text(outfile, "$ ./");
+	append_text(outfile, ex->name);
+	for (i = 1; argv[i]; i++)
+	{
+		append_text(outfile, " ");
+		if (strchr(argv[i], ' ') || strchr(argv[i], '\t'))
+			append_text(outfile, "\"");
+		append_text(outfile, argv[i]);
+		if (strchr(argv[i], ' ') || strchr(argv[i], '\t'))
+			append_text(outfile, "\"");
+	}
+	append_text(outfile, "\n");
+}
+
 /* Runs every line of args.txt (args separated by '|'). */
 static int	run_program(const t_exercise *ex, const char *args_path,
 	const char *outfile)
 {
 	FILE	*f;
 	char	line[BUF_SIZE];
-	char	header[BUF_SIZE * 2];
 	char	*argv[MAX_ARGS];
 	char	*tok;
 	int		n;
@@ -86,8 +107,6 @@ static int	run_program(const t_exercise *ex, const char *args_path,
 	while (!sig && fgets(line, sizeof(line), f))
 	{
 		line[strcspn(line, "\n")] = '\0';
-		snprintf(header, sizeof(header), "$ ./%s %s\n", ex->name, line);
-		append_text(outfile, header);
 		argv[0] = BIN;
 		n = 1;
 		tok = (line[0] != '\0') ? strtok(line, "|") : NULL;
@@ -97,6 +116,7 @@ static int	run_program(const t_exercise *ex, const char *args_path,
 			tok = strtok(NULL, "|");
 		}
 		argv[n] = NULL;
+		append_header(ex, argv, outfile);
 		sig = run(argv, outfile);
 		append_text(outfile, "\n");
 	}

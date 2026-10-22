@@ -1,0 +1,6 @@
+ft_strjoin("Hello, ", "42!") = "Hello, 42!" | new memory: yes
+ft_strjoin("", "") = "" | new memory: yes
+ft_strjoin("abc", "") = "abc" | new memory: yes
+ft_strjoin("", "xyz") = "xyz" | new memory: yes
+ft_strjoin("42", " Porto") = "42 Porto" | new memory: yes
+ft_strjoin("a", "b") = "ab" | new memory: yes

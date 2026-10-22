@@ -1,0 +1,13 @@
+Assignment name  : vowel_count
+Expected files   : vowel_count.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that returns the number of vowels in a string.
+
+Vowels are 'a', 'e', 'i', 'o', 'u', in lowercase or uppercase.
+('y' is not a vowel.)
+
+Your function must be declared as follows:
+
+int	vowel_count(char *str);

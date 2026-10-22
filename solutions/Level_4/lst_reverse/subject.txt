@@ -1,0 +1,21 @@
+Assignment name  : lst_reverse
+Expected files   : lst_reverse.c
+Allowed functions: None
+--------------------------------------------------------------------------------
+
+Write a function that reverses a linked list in place (without creating
+new nodes) and returns the new first node.
+
+If the list is empty (NULL), the function returns NULL.
+
+Declare this structure in your file:
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+Your function must be declared as follows:
+
+t_list	*lst_reverse(t_list *lst);

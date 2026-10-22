@@ -1,0 +1,18 @@
+Assignment name  : ft_split
+Expected files   : ft_split.c
+Allowed functions: malloc, free
+--------------------------------------------------------------------------------
+
+Write a function that splits the string s into words, using the
+character c as separator. Consecutive separators are treated as one,
+and separators at the start or end produce no empty words.
+
+The function returns a NULL-terminated array of strings, all allocated
+with malloc.
+
+If an allocation fails, the function frees everything it allocated
+and returns NULL.
+
+Your function must be declared as follows:
+
+char	**ft_split(char const *s, char c);
