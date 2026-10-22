@@ -107,7 +107,7 @@ The PracticeShell is the core of this repository.
 It lets you practice each topic hands-on, with hidden tests and automatic feedback, instead of just reading solutions.
 
 <p align="center">
-  <img src="assets/exercise.png" alt="PracticeShell Banner" width="800">
+  <img src="assets/exercise.png" alt="PracticeShell Banner" width="300">
 </p>
 
 | Grading | Exam experience | Interface |
