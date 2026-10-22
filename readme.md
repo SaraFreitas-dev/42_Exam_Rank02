@@ -31,13 +31,9 @@ New exercises will be added over time. Each one focuses on a concept you need fo
 
 <br>
 <p align="center">
-
-<br>
-<p align="center">
   <img src="assets/menu.png" alt="PracticeShell Preview" width="300">
 </p>
 
-</p>
 
 <p align="center">
   <a href="#-quick-start">Quick Start</a> •
