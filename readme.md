@@ -32,7 +32,10 @@ New exercises will be added over time. Each one focuses on a concept you need fo
 <br>
 <p align="center">
 
-***add img***
+<br>
+<p align="center">
+  <img src="assets/menu.png" alt="PracticeShell Preview" width="300">
+</p>
 
 </p>
 
@@ -108,9 +111,7 @@ The PracticeShell is the core of this repository.
 It lets you practice each topic hands-on, with hidden tests and automatic feedback, instead of just reading solutions.
 
 <p align="center">
-
-***add img***
-
+  <img src="assets/banner_practice_rank02.png" alt="PracticeShell Banner" width="800">
 </p>
 
 | Grading | Exam experience | Interface |
@@ -129,10 +130,9 @@ The workflow:
 5. Fix failing tests
 6. Progress to the next level
 
+<br>
 <p align="center">
-
-***add img***
-
+  <img src="assets/list.png" alt="PracticeShell Preview" width="300">
 </p>
 
 ---
