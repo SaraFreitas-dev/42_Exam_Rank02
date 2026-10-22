@@ -1,0 +1,17 @@
+ft_atoi("42") = 42
+ft_atoi("-42") = -42
+ft_atoi("+42") = 42
+ft_atoi("0") = 0
+ft_atoi("-0") = 0
+ft_atoi("   123") = 123
+ft_atoi(" \t\n\v\f\r 456") = 456
+ft_atoi("12abc34") = 12
+ft_atoi("abc") = 0
+ft_atoi("") = 0
+ft_atoi("--5") = 0
+ft_atoi("+-5") = 0
+ft_atoi("-+5") = 0
+ft_atoi("- 5") = 0
+ft_atoi("  -00123") = -123
+ft_atoi("2147483647") = 2147483647
+ft_atoi("-2147483648") = -2147483648

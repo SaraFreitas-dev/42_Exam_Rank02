@@ -1,0 +1,6 @@
+ft_strlen("") = 0
+ft_strlen("a") = 1
+ft_strlen("Hello, 42!") = 10
+ft_strlen("   spaces   ") = 12
+ft_strlen("tab	here") = 8
+ft_strlen("a very long string to make sure the loop works fine") = 51

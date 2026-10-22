@@ -1,0 +1,5 @@
+ft_strcpy(buf, "Hello") -> buf = "Hello" | returns buf: yes
+ft_strcpy(buf, "") -> buf = "" | returns buf: yes
+ft_strcpy(buf, "a") -> buf = "a" | returns buf: yes
+ft_strcpy(buf, "42 Porto rocks") -> buf = "42 Porto rocks" | returns buf: yes
+ft_strcpy(buf, "with	tab") -> buf = "with	tab" | returns buf: yes

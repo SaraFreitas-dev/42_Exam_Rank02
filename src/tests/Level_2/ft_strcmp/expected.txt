@@ -1,0 +1,10 @@
+ft_strcmp("abc", "abc") -> zero
+ft_strcmp("abc", "abd") -> negative
+ft_strcmp("abd", "abc") -> positive
+ft_strcmp("", "") -> zero
+ft_strcmp("", "a") -> negative
+ft_strcmp("a", "") -> positive
+ft_strcmp("abc", "ab") -> positive
+ft_strcmp("ab", "abc") -> negative
+ft_strcmp("Hello", "hello") -> negative
+ft_strcmp("42", "42 Porto") -> negative

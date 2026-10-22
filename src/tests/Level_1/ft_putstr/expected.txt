@@ -1,0 +1,7 @@
+[Hello, 42!]
+[]
+[a]
+[  spaces and	tabs  ]
+[line
+break]
+[0123456789 !@#$%^&*()]

@@ -1,0 +1,9 @@
+ft_strcspn("hello world", " ") = 5
+ft_strcspn("hello", "xyz") = 5
+ft_strcspn("hello", "") = 5
+ft_strcspn("", "abc") = 0
+ft_strcspn("", "") = 0
+ft_strcspn("abcdef", "fed") = 3
+ft_strcspn("42 Porto", "0123456789") = 0
+ft_strcspn("Porto 42", "0123456789") = 6
+ft_strcspn("aaa", "a") = 0

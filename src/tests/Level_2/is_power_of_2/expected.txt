@@ -1,0 +1,14 @@
+is_power_of_2(0) = 0
+is_power_of_2(1) = 1
+is_power_of_2(2) = 1
+is_power_of_2(3) = 0
+is_power_of_2(4) = 1
+is_power_of_2(6) = 0
+is_power_of_2(16) = 1
+is_power_of_2(31) = 0
+is_power_of_2(64) = 1
+is_power_of_2(1023) = 0
+is_power_of_2(1024) = 1
+is_power_of_2(65536) = 1
+is_power_of_2(2147483648) = 1
+is_power_of_2(4294967295) = 0

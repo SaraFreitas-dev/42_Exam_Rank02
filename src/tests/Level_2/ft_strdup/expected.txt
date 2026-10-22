@@ -1,0 +1,5 @@
+ft_strdup("Hello") = "Hello" | new memory: yes
+ft_strdup("") = "" | new memory: yes
+ft_strdup("a") = "a" | new memory: yes
+ft_strdup("42 Porto rocks") = "42 Porto rocks" | new memory: yes
+ft_strdup("with	tab and spaces  ") = "with	tab and spaces  " | new memory: yes
