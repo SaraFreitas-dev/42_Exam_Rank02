@@ -2,12 +2,15 @@
   <img src="assets/banner_practice_rank02.png" alt="PracticeShell Banner" width="800">
 </p>
 
+<p align="center">
+  <a href="https://github.com/stars/SaraFreitas-dev/lists/practiceshell"><img src="https://raw.githubusercontent.com/SaraFreitas-dev/42_School_Badges/main/assets/practiceshell.svg" width="200" alt="PracticeShell"/></a>
+  <br>
+  <sub>👉 <a href="https://github.com/SaraFreitas-dev/42_School_Badges">Get your 42 badges here</a></sub>
+</p>
+
+<h2 align="center">Rank 02 C PracticeShell - Exercises & Solutions</h2>
+
 <br>
-
-<h1 align="center">Rank 02 (C) PracticeShell - Exercises & Solutions</h1>
-
-<br>
-
 
 > [!WARNING]
 > This repository does **not** contain the real Rank 02 exam subjects or solutions. The PracticeShell uses classic **Piscine** and **libft** exercises, plus **original exercises** inspired by the exam's difficulty levels. They are great for training, but they are **not** the actual exam questions.
