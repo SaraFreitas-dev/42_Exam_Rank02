@@ -2,13 +2,24 @@
 #include <stdio.h>
 #include <string.h>
 
+int	is_back(const char *cmd)
+{
+	return (!strcmp(cmd, "back") || !strcmp(cmd, "b"));
+}
+
+int	is_quit(const char *cmd)
+{
+	return (!strcmp(cmd, "quit") || !strcmp(cmd, "q") || !strcmp(cmd, "exit"));
+}
+
 static void	print_help(void)
 {
 	printf("Commands:\n");
 	printf("  " CYAN "grademe" RESET "  grade your solution\n");
 	printf("  " CYAN "subject" RESET "  show the subject again\n");
 	printf("  " CYAN "status" RESET "   show exercise and time left\n");
-	printf("  " CYAN "quit" RESET "     leave this exercise\n");
+	printf("  " CYAN "back" RESET "     leave this exercise (back to menu)\n");
+	printf("  " CYAN "quit" RESET "     exit the PracticeShell\n");
 }
 
 static void	print_status(const t_exercise *ex, time_t exam_start)
@@ -23,7 +34,7 @@ static void	print_status(const t_exercise *ex, time_t exam_start)
 	}
 }
 
-/* Main loop for one exercise. Returns 1 if passed, 0 otherwise. */
+/* Main loop for one exercise. Returns EX_PASSED, EX_BACK or EX_QUIT. */
 static int	exercise_loop(const t_exercise *ex, time_t exam_start)
 {
 	char	buf[BUF_SIZE];
@@ -31,23 +42,25 @@ static int	exercise_loop(const t_exercise *ex, time_t exam_start)
 	while (read_line(CYAN "\npracticeshell> " RESET, buf))
 	{
 		if (exam_start && time(NULL) - exam_start > EXAM_DURATION)
-			return (printf(RED "Time is over!" RESET "\n"), 0);
+			return (printf(RED "Time is over!" RESET "\n"), EX_BACK);
 		if (!strcmp(buf, "grademe"))
 		{
 			if (grade(ex))
 				return (printf(GREEN BOLD "[OK] All tests passed!" RESET "\n"),
-					1);
+					EX_PASSED);
 		}
 		else if (!strcmp(buf, "subject"))
 			print_subject(ex);
 		else if (!strcmp(buf, "status"))
 			print_status(ex, exam_start);
-		else if (!strcmp(buf, "quit"))
-			return (0);
+		else if (is_back(buf))
+			return (EX_BACK);
+		else if (is_quit(buf))
+			return (EX_QUIT);
 		else if (buf[0])
 			print_help();
 	}
-	return (0);
+	return (EX_QUIT);
 }
 
 /*

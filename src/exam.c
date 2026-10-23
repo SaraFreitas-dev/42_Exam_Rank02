@@ -22,19 +22,21 @@ static const t_exercise	*pick_random(int level)
 	return (NULL);
 }
 
-void	exam_mode(void)
+t_action	exam_mode(void)
 {
 	const t_exercise	*ex;
 	time_t				start;
 	int					level;
 	int					passed;
 	int					total;
+	int					result;
 
 	start = time(NULL);
 	passed = 0;
 	total = 0;
+	result = EX_PASSED;
 	printf(YELLOW BOLD "\nExam started! You have 3 hours." RESET "\n");
-	for (level = 1; level <= g_max_level; level++)
+	for (level = 1; level <= g_max_level && result == EX_PASSED; level++)
 	{
 		ex = pick_random(level);
 		if (!ex)
@@ -42,11 +44,14 @@ void	exam_mode(void)
 		total++;
 		printf(CYAN BOLD "\n=== Level %d / %d ===" RESET "\n", level,
 			g_max_level);
-		if (!run_exercise(ex, start))
-			break ;
-		passed++;
+		result = run_exercise(ex, start);
+		if (result == EX_PASSED)
+			passed++;
 	}
+	if (result == EX_QUIT)
+		return (ACT_QUIT);
 	printf(BOLD "\nResult: %d exercise(s) passed" RESET "\n", passed);
 	if (passed == total)
 		printf(GREEN BOLD "🏆 Exam passed!" RESET "\n");
+	return (ACT_PAUSE);
 }
